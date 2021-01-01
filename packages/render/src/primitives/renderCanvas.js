@@ -49,6 +49,11 @@ const painter = ctx => {
     {},
   );
 
+  
+  p.linearGradient = (...args) => {
+    return ctx.linearGradient(...args);
+  };
+  
   return p;
 };
 
